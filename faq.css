@@ -1,0 +1,94 @@
+body{
+    background: #f5f8ff;
+
+}
+.faq-container{
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f8ff;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.faq-container h1{
+    color: #333;
+}
+
+.faq-container .tab{
+    position: relative;
+    background: #fff;
+    max-width: 1600px;
+    padding: 0 20px 20px;
+    box-shadow: 0 15px 25px;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.faq-container .tab input{
+    appearance: none;
+}
+
+.faq-container .tab label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.faq-container .tab label::after{
+    content: '+';
+    position: absolute;
+    right: 10px;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.1);
+    transition: transform 1s;
+}
+.faq-container .tab:hover label::after{
+    color: #333;
+}
+
+.faq-container .tab input:checked~label::after{
+    transform: rotate(135deg);
+}
+
+.faq-container .tab label h2{
+    width: 40px;
+    height: 40px;
+    background:#333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+
+.faq-container .tab label h3{
+    position: relative;
+    font-weight: 500 ;
+    color: #333;
+    z-index: 10;
+}
+
+.faq-container .tab .content{
+    max-height: 0;
+    transition: 1s;
+    overflow: hidden;
+
+}
+
+.faq-container .tab input:checked~.content{
+    max-height: 100vh;
+}
+
+.faq-container .tab .content p{
+    position: relative;
+    padding: 10px 0;
+    color: #333;
+    z-index: 10;
+}

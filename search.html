@@ -1,0 +1,146 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+           <title>Movie Design</title>
+
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">playz</h1>
+            </div>
+            <div class="menu-container" >
+                <ul class="menu-list">
+                    <li class="menu-list-item active" ><a class="links" href="#home">Home</a></li>
+                    <li class="menu-list-item"><a class="links" href="#movies">Movies</a>
+                           
+                    </li>
+                    <li class="menu-list-item"><a class="links" href="#series">Series</a></li>
+                    <li class="menu-list-item"><a class="links" href="#popular">Popular</a></li>
+                    <li class="menu-list-item"><a class="links" href="about.html">Terms of Use</a></li>
+
+                </ul>
+            </div>
+            
+            <div class="profile-container">
+                <img class="profile-picture" src="img/user.png" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                    
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fas fa-search"></i>
+        <a href="index.html"><i class="left-menu-icon fas fa-home"></i></a>        
+        <a href="reviews.html"><i class="left-menu-icon fas fa-users"></i></a>
+        <i class="left-menu-icon fas fa-bookmark"></i></a>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+    <div class="container" id="home">
+        <div class="content-container">
+            <div class="search">
+                <input type="text" class="search-bar">
+                <button class="btn" id="searchbtn">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <div class="movie-list-container" id="search-movie-container">
+                <h1 class="movie-list-title" id="newww">SUGGESTED
+                </h1> 
+
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpeg" id="imgmov1" alt="">
+                            <span class="movie-list-item-title" id="titlemov1">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button" id="trailer">Trailer</button>
+                            
+
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2.jpeg" id="imgmov2" alt="">
+                            <span class="movie-list-item-title" id="titlemov2" >Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button" id="trailer">Trailer</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpg" id="imgmov3" alt="">
+                            <span class="movie-list-item-title" id="titlemov3">Storm</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button" id="trailer">Trailer</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4.jpg" id="imgmov4" alt="">
+                            <span class="movie-list-item-title" id="titlemov4">1917</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button" id="trailer">Trailer</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpg" id="imgmov5" alt="">
+                            <span class="movie-list-item-title" id="titlemov5">Avengers</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button" id="trailer">Trailer</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/6.jpg" id="imgmov6" alt="">
+                            <span class="movie-list-item-title" id="titlemov6">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button" id="trailer">Trailer</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpg" id="imgmov7" alt="">
+                            <span class="movie-list-item-title" id="titlemov7">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button" id="trailer">Trailer</button>
+                        </div>
+                        
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <script src="fetching.js"></script>
+            <script src="app.js"></script>
+
+        
+
+        </body>
+        </html>
+            
+            
